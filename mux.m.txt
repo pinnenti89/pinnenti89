@@ -1,0 +1,5 @@
+function out=mux(S0,D0,D1)
+o1=andgate(D1,S0);
+a=notgate(S0);
+o2=andgate(D0,a);
+out=orgate(o1,o2)

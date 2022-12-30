@@ -1,0 +1,6 @@
+% CLASS assignment
+%%
+% half adder
+function [sum,carry]=halfadder(a,b)
+sum = xorgate(a,b)
+carry = andgate(a,b)

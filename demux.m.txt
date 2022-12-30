@@ -1,0 +1,4 @@
+function [a,b]=demux(I,S)
+o1=notgate(S);
+a=andgate(o1,I)
+b=andgate(S,I)

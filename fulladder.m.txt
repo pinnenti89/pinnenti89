@@ -1,0 +1,6 @@
+function [sum,carry] = fulladder(a,b,c)
+o1=xorgate(a,b)
+sum=xorgate(o1,c)
+o2=andgate(a,b);
+o3=andgate(o1,c);
+carry=orgate(o2,o3)
